@@ -28,9 +28,7 @@ public class ValueTest {
     }
 
     @SpringBootApplication
-    @PropertySources({
-            @PropertySource("classpath:/user.properties")
-    })
+    @PropertySources({@PropertySource("classpath:/user.properties")})
     public static class TestApplication {
 
         @Component
