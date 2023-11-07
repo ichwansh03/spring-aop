@@ -14,4 +14,14 @@ public class ApplicationProperties {
     private String name;
 
     private Integer version;
+
+    private DatabaseProperties database;
+    @Getter
+    @Setter
+    public static class DatabaseProperties {
+        private String username;
+        private String password;
+        private String url;
+        private String dbname;
+    }
 }

@@ -18,6 +18,9 @@ public class ConfigPropertiesTest {
     void testConfigProperties() {
         Assertions.assertEquals("Spring Boot Project", properties.getName());
         Assertions.assertEquals(1, properties.getVersion());
+
+        Assertions.assertEquals("shopdb", properties.getDatabase().getDbname());
+        Assertions.assertEquals("jdbc:example",properties.getDatabase().getUrl());
     }
 
     @SpringBootApplication
