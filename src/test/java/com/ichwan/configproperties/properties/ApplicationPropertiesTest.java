@@ -17,9 +17,11 @@ public class ApplicationPropertiesTest {
     void testApplicationProperties() {
         String name = environment.getProperty("application.name");
         String id = environment.getProperty("application.id");
+        String version = environment.getProperty("application.version");
 
         Assertions.assertEquals("P002", id);
         Assertions.assertEquals("Spring Boot Project", name);
+        Assertions.assertEquals("1",version);
     }
 
     @SpringBootApplication
