@@ -19,8 +19,14 @@ public class ConfigPropertiesTest {
         Assertions.assertEquals("Spring Boot Project", properties.getName());
         Assertions.assertEquals(1, properties.getVersion());
 
+        //database properties
         Assertions.assertEquals("shopdb", properties.getDatabase().getDbname());
         Assertions.assertEquals("jdbc:example",properties.getDatabase().getUrl());
+
+        //database collection properties
+        Assertions.assertEquals(80, properties.getDatabase().getMaxTablesSize().get("products"));
+        Assertions.assertEquals(20, properties.getDatabase().getMaxTablesSize().get("categories"));
+        Assertions.assertEquals(150, properties.getDatabase().getMaxTablesSize().get("customers"));
     }
 
     @SpringBootApplication
