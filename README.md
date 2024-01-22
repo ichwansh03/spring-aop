@@ -6,3 +6,7 @@
 * Properties file juga dapat dipisah seperti konsep modularization dengan menggunakan annotation `@PropertySource`
 * Profile test digunakan ketika ingin mengaktifkan test berdasarkan konfigurasi pada `application.properties` sesuai dengan nama profile yg dibuat. Lihat implementasinya di [Class ProfileTest](https://github.com/ichwansh03/spring-config-properties/blob/main/src/test/java/com/ichwan/configproperties/profile/ProfileTest.java)
 * Membuat binding properties dan automation agar tidak lagi menggunakan cara manual seperti pada class [Class ConfigPropertiesTest](https://github.com/ichwansh03/spring-config-properties/blob/main/src/test/java/com/ichwan/configproperties/configproperties/ConfigPropertiesTest.java). Fitur ini sering digunakan pada spring boot.
+
+## Spring AOP
+
+* Aspect Oriented Programming (AOP) merupakan salah satu library dari spring yang mendukung penggunaan sebuah aspect pada banyak method. Contohnya seperti pembuatan spesifikasi log namun cukup dibuat sekali saja dengan anotasi `@Aspect` dan log tersebut nantinya dapat digunakan pada semua method.
