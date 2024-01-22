@@ -10,3 +10,5 @@
 ## Spring AOP
 
 * Aspect Oriented Programming (AOP) merupakan salah satu library dari spring yang mendukung penggunaan sebuah aspect pada banyak method. Contohnya seperti pembuatan spesifikasi log namun cukup dibuat sekali saja dengan anotasi `@Aspect` dan log tersebut nantinya dapat digunakan pada semua method.
+* Contoh penerapannya seperti anotasi `@Transactional` yang dapat digunakan pada method yg berhubungan dengan database transaction.
+* Dokumentasi resmi dari AspectJ [Docs](https://eclipse.dev/aspectj/doc/released/adk15notebook/index.html)
